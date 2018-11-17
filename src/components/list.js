@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import { getListData } from '../actions';
+import NavButton from './nav_button';
 
 class List extends Component {
 
@@ -12,11 +13,13 @@ class List extends Component {
         const listElements = this.props.todos.map(item => {
             return <li key = {item._id} className = "collection-item">{item.title}</li>
         });
-        
+
         return (
             <div>
                 <h1 className = "center">To Do List</h1>
                 <p className = "center grey-text">now with Redux</p>
+
+                <NavButton to ="/add-item" text = "Add Item" color = "pink" />
 
                 <ul className="collection">
                     {listElements}
