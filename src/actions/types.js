@@ -1,4 +1,5 @@
 export default {
     GET_ALL_LIST_DATA: 'get_all_list_data',
-    ADD_LIST_ITEM: 'add_list_item'
+    ADD_LIST_ITEM: 'add_list_item',
+    GET_SINGLE_ITEM: 'get_single_item'
 }
