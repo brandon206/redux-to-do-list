@@ -17,10 +17,10 @@ export function getListData () {
     
     const resp = axios.get(BASE_URL + API_KEY);
     
-    return {
+    return ({
         type: types.GET_ALL_LIST_DATA,
         payload: resp
-    }
+    });
 }
 
 export function getSingleItem (id) {
